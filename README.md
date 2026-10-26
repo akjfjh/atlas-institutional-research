@@ -1,12 +1,16 @@
 # ATLAS — Institutional Trading Intelligence
 
-<img src="https://raw.githubusercontent.com/akjfjh/atlas-institutional-research/main/docs/images/atlas-project-icon.png" alt="ATLAS 项目图标" width="88" height="88">
+![ATLAS 项目图标](docs/images/atlas-project-icon-96.png)
 
 [简体中文](README.md) · [English](README_EN.md)
 
 **独立开发的 OKX 加密资产研究 Skill 与本地研究台。** 将 OKX 公共行情、分工研究、Codex 证据研读、风险审查和本地档案串成可复查的研究流程。本版本不提供真实下单功能。
 
 ATLAS 的“机构级”描述研究流程组织方式，不表示受到 OKX、美联储或任何金融机构认可。它不承诺收益、胜率提升或所有智能体兼容。
+
+![ATLAS 证据研究概念图](docs/images/atlas-skill-hero.jpg)
+
+*概念视觉，不展示实时行情或交易信号。*
 
 ## 首页与研究台
 
