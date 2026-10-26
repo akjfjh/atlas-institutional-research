@@ -1,5 +1,7 @@
 # ATLAS — Institutional Trading Intelligence
 
+[简体中文](README.md) · [English](README_EN.md)
+
 **独立开发的 OKX 加密资产研究 Skill 与本地研究引擎。** 将真实行情、结构化研究角色、证据交换、量化验证、审查和本地档案连成可执行流程。研究判断不等于下单；本版本没有真实交易写入命令。
 
 ATLAS 的“机构级”描述研究流程组织方式，不表示受到 OKX、美联储或任何金融机构认可。它不承诺收益、胜率提升或所有智能体兼容。
