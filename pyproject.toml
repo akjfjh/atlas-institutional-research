@@ -21,4 +21,4 @@ include = ["atlas*"]
 testpaths = ["tests"]
 
 [tool.setuptools.package-data]
-atlas = ["providers/*.json", "web/static/*.html", "web/static/*.css", "web/static/*.js"]
+atlas = ["providers/*.json", "web/static/*.html", "web/static/*.css", "web/static/*.js", "web/static/*.svg"]

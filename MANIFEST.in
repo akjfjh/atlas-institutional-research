@@ -3,10 +3,10 @@ recursive-include agents *.yaml
 recursive-include references *.md *.json
 recursive-include schemas *.json
 recursive-include scripts *.py
-recursive-include atlas/web/static *.html *.css *.js
+recursive-include atlas/web/static *.html *.css *.js *.svg
 recursive-include docs *.md *.json
 recursive-include docs/examples *.png
-recursive-include docs/images *.jpg *.jpeg *.png *.webp
+recursive-include docs/images *.jpg *.jpeg *.png *.webp *.svg
 exclude docs/user-requirements.md docs/engineering-contract.md
 prune docs/upstream
 include docs/upstream/source-lock.json docs/upstream/NOTICE.md

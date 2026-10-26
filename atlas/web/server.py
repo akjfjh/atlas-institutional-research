@@ -245,11 +245,11 @@ def handler_for(app:Dashboard):
         def do_GET(self):
             if not self._local_host():return self._error(403,'Local host required')
             path=self._route().path
-            if path in {'/','/index.html','/app.css','/app.js'}:
+            if path in {'/','/index.html','/app.css','/app.js','/icon.svg'}:
                 filename='index.html' if path in {'/','/index.html'} else path[1:]
                 file=STATIC/filename
                 if not file.is_file():return self._error(404,'Asset missing')
-                ctype={'index.html':'text/html; charset=utf-8','app.css':'text/css; charset=utf-8','app.js':'text/javascript; charset=utf-8'}[filename]
+                ctype={'index.html':'text/html; charset=utf-8','app.css':'text/css; charset=utf-8','app.js':'text/javascript; charset=utf-8','icon.svg':'image/svg+xml'}[filename]
                 return self._send(200,file.read_bytes(),ctype)
             if path=='/api/health':return self._send(200,{'status':'ok','local_only':True,'time':utc_now()})
             if not path.startswith('/api/') or not self._authorized():return self._error(403,'Local session token required')

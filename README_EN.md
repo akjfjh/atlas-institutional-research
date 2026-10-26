@@ -1,5 +1,7 @@
 # ATLAS — Institutional Trading Intelligence
 
+<img src="docs/images/atlas-project-icon.png" alt="ATLAS project icon" width="88" height="88">
+
 [简体中文](README.md) · [English](README_EN.md)
 
 An independent crypto research Skill and local dashboard. It brings OKX public market data, assigned research roles, Codex evidence review, risk checks, and local records into a reviewable workflow. This release cannot place real orders. “Institutional” describes the workflow; it does not imply endorsement by OKX, the Federal Reserve, or any financial institution. No return or win-rate improvement is promised.

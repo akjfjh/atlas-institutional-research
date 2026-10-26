@@ -1,5 +1,7 @@
 # ATLAS — Institutional Trading Intelligence
 
+<img src="docs/images/atlas-project-icon.png" alt="ATLAS 项目图标" width="88" height="88">
+
 [简体中文](README.md) · [English](README_EN.md)
 
 **独立开发的 OKX 加密资产研究 Skill 与本地研究台。** 将 OKX 公共行情、分工研究、Codex 证据研读、风险审查和本地档案串成可复查的研究流程。本版本不提供真实下单功能。

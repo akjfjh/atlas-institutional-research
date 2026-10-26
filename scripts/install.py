@@ -49,7 +49,7 @@ def copy_skill(source: Path, target: Path) -> list[str]:
                     raise ValueError(f'Symlinks are not packaged: {file.relative_to(source)}')
                 allowed = {'.py'} if name in ('atlas', 'scripts') else ({'.md', '.json'} if name == 'references' else ({'.json'} if name == 'schemas' else {'.yaml', '.yml'}))
                 if name=='atlas' and file.relative_to(src).parts[:2]==('web','static'):
-                    allowed={'.html','.css','.js'}
+                    allowed={'.html','.css','.js','.svg'}
                 if file.suffix not in allowed or file.name.startswith('.'):
                     continue
                 rel = file.relative_to(source)
@@ -86,7 +86,7 @@ def copy_skill(source: Path, target: Path) -> list[str]:
         images=source/'docs'/'images'
         if images.is_dir():
             for file in images.iterdir():
-                if file.is_file() and not file.is_symlink() and file.suffix in {'.jpg','.jpeg','.png','.webp'}:
+                if file.is_file() and not file.is_symlink() and file.suffix in {'.jpg','.jpeg','.png','.webp','.svg'}:
                     dest=staged/'docs'/'images'/file.name
                     dest.parent.mkdir(parents=True,exist_ok=True)
                     shutil.copy2(file,dest)
