@@ -30,6 +30,8 @@ def test_install_is_idempotent_and_never_copies_private_state(tmp_path):
     (source/'atlas.db').write_text('research archive')
     (source/'atlas'/'.env').write_text('nested private config')
     (source/'atlas'/'private.sqlite3').write_text('nested archive')
+    (source/'docs'/'images').mkdir(parents=True)
+    (source/'docs'/'images'/'preview.jpg').write_bytes(b'public preview')
     installer=load_script('install')
     first=installer.copy_skill(source,dest)
     (dest/'.atlas-runtime.json').write_text('{"python":"/prepared/runtime"}')
@@ -37,6 +39,7 @@ def test_install_is_idempotent_and_never_copies_private_state(tmp_path):
     second=installer.copy_skill(source,dest)
     assert first==second
     assert 'updated' in (dest/'atlas'/'__init__.py').read_text()
+    assert (dest/'docs'/'images'/'preview.jpg').read_bytes()==b'public preview'
     assert (dest/'.atlas-runtime.json').read_text()=='{"python":"/prepared/runtime"}'
     assert not (dest/'.env').exists() and not (dest/'.venv').exists() and not (dest/'atlas.db').exists()
     assert not (dest/'atlas'/'.env').exists() and not (dest/'atlas'/'private.sqlite3').exists()
