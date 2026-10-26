@@ -1,5 +1,9 @@
 # ATLAS local visual research floor / 本地可视化研究台
 
+![ATLAS 首页与研究设置 / Home and research setup](images/atlas-homepage.png)
+
+首页先选择交易经验、市场类别、交易对、计划持仓时间和研究模式；下方研究台展示这次研究的证据、进度与结论。The home screen selects experience level, market, instrument, planned holding period and research mode; the dashboard below shows evidence, progress and findings.
+
 Run the installed `scripts/atlas.py ui` or `atlas ui`. A browser opens a random local URL on `127.0.0.1`; `--no-open` prints the URL without opening it, and `--port 8765` selects a port. Leave the terminal process running while using the page. Close it with Ctrl-C. The server has no remote bind or order endpoint.
 
 首次使用时，Skill 检查并安装本地 Python 运行环境。若语言、本金、主要交易对尚未设置，网页会出现引导表单。配置存放在本机 ATLAS 数据目录的 `config.json`；已有配置不会再次询问。现有持仓/挂单必须由用户确认，旧确认会在开仓风险评估中失效。

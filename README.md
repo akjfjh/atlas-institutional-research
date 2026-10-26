@@ -2,17 +2,23 @@
 
 [简体中文](README.md) · [English](README_EN.md)
 
-**独立开发的 OKX 加密资产研究 Skill 与本地研究引擎。** 将真实行情、结构化研究角色、证据交换、量化验证、审查和本地档案连成可执行流程。研究判断不等于下单；本版本没有真实交易写入命令。
+**独立开发的 OKX 加密资产研究 Skill 与本地研究台。** 将 OKX 公共行情、分工研究、Codex 证据研读、风险审查和本地档案串成可复查的研究流程。本版本不提供真实下单功能。
 
 ATLAS 的“机构级”描述研究流程组织方式，不表示受到 OKX、美联储或任何金融机构认可。它不承诺收益、胜率提升或所有智能体兼容。
 
-## 研究台预览
+## 首页与研究台
+
+首页可选择新手或资深说明、现货/永续/交割市场、计划持仓时间和研究模式。它显示的是操作入口；行情判断须启动研究后查看。
+
+![ATLAS 首页与研究设置](docs/images/atlas-homepage.png)
+
+研究台展示各角色的证据进度、K 线、Codex 研读结论与风控结果。
 
 ![ATLAS 研究角色与 K 线图](docs/images/atlas-research-dashboard.jpg)
 
 ![Codex 研读结论与风控记录](docs/images/atlas-codex-review.jpg)
 
-图片展示一次已归档的 BTC-USDT 研究快照。价格与结论只对应截图中的时间，打开研究台后需重新运行研究。
+后两张图片展示一次已归档的 BTC-USDT 研究快照。价格与结论只对应截图中的时间；需要当前判断时，请重新运行研究。
 
 ## 安装与开始
 
@@ -69,7 +75,7 @@ Windows 使用 `.venv\Scripts\python.exe` 和 `.venv\Scripts\atlas.exe`。只运
 | 配置与能力 | `atlas config show` / `atlas capabilities --refresh` |
 | MCP stdio 服务 | `atlas mcp` |
 
-网页提供 OKX 现货、永续和交割合约实时目录、可搜索交易对、研究角色进度、K 线、风险结论、中英报告和本地复盘。角色先整理证据，Codex 再逐项研读并形成结论；没有完成 Codex 审阅就不发布正式简报。一次 Codex 审阅不冒充 12 个独立模型。详见 [可视化研究台](docs/visual-dashboard.md) 与 [使用方法](docs/usage.md)。
+网页按需读取并短时缓存 OKX 现货、永续和交割合约公共目录，提供交易对搜索、研究角色进度、K 线、风险结论、中英报告和本地复盘。角色先整理证据，Codex 再逐项研读并形成结论；没有完成 Codex 审阅就不发布正式简报。一次 Codex 审阅不等于 12 个独立模型的判断。详见 [可视化研究台](docs/visual-dashboard.md) 与 [使用方法](docs/usage.md)。
 
 ## 协作、质量与留档
 
@@ -98,4 +104,4 @@ python scripts/validate.py --package dist/atlas-institutional-research-0.6.0.zip
 
 本版实际执行证据与限制见 [0.6.0 验证报告](docs/validation-report-v0.6.md) 和 [验收矩阵](docs/acceptance-matrix.md)。格式检查不证明研究预测有效；Linux、Windows、Claude Code、Cursor、OpenClaw 的未运行项目必须标为未验证。[兼容性](docs/compatibility.md)。
 
-项目采用 [MIT](LICENSE)；没有发布到 GitHub 或 OKX。Marketplace 要求账户/身份条件、格式检查、安全扫描和平台审核，准备了 [提交说明](docs/publishing.md)。作者必须在发布前确认数据使用许可和第三方依赖审计结果。
+项目采用 [MIT](LICENSE)，已在 GitHub 公开托管，尚未发布到 OKX Marketplace。Marketplace 要求账户/身份条件、格式检查、安全扫描和平台审核，准备了 [提交说明](docs/publishing.md)。提交 Marketplace 前仍需确认数据使用许可和第三方依赖审计结果。

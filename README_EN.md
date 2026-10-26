@@ -2,15 +2,21 @@
 
 [简体中文](README.md) · [English](README_EN.md)
 
-An independent, local crypto research engine and Agent Skill using OKX market data, a structured research graph, technical calculations, reproducible backtests, audit and local memory. “Institutional” describes the workflow; it does not imply endorsement by OKX, the Federal Reserve or a financial institution. No profitability or win-rate improvement is promised.
+An independent crypto research Skill and local dashboard. It brings OKX public market data, assigned research roles, Codex evidence review, risk checks, and local records into a reviewable workflow. This release cannot place real orders. “Institutional” describes the workflow; it does not imply endorsement by OKX, the Federal Reserve, or any financial institution. No return or win-rate improvement is promised.
 
-## Dashboard preview
+## Home and research dashboard
+
+The home screen lets you choose novice or experienced explanations, spot/swap/expiry markets, a planned holding period, and a research mode. Market conclusions appear only after a research run.
+
+![ATLAS home and research setup](docs/images/atlas-homepage.png)
+
+The research dashboard shows evidence progress, price charts, Codex findings, and risk results.
 
 ![ATLAS research roles and price chart](docs/images/atlas-research-dashboard.jpg)
 
 ![Codex review and risk record](docs/images/atlas-codex-review.jpg)
 
-These screenshots show an archived BTC-USDT research snapshot. Its price and conclusions apply only to the time shown; run a new study for a current view.
+The two research screenshots show an archived BTC-USDT snapshot. Its price and conclusions apply only to the time shown; run a new study for a current view.
 
 ## Install
 
@@ -34,7 +40,7 @@ On Windows, use `.venv\Scripts\python.exe` and `.venv\Scripts\atlas.exe`. Runtim
 ```bash
 atlas doctor
 atlas ui
-atlas init --language zh --capital-usdt 300 --markets BTC-USDT,ETH-USDT --no-open-positions
+atlas init --language en --capital-usdt 300 --markets BTC-USDT,ETH-USDT --no-open-positions
 atlas research BTC-USDT --mode quick
 atlas research ETH-USDT-SWAP --mode full --timeframes 15m,1H,1D,1W,1M
 atlas research BTC-USDT --mode full --lang zh
@@ -51,7 +57,7 @@ atlas capabilities --refresh
 atlas mcp
 ```
 
-Ask a compatible agent to “open the ATLAS dashboard”, “use ATLAS to research ETH across daily, weekly and monthly trends”, “study BTC after FOMC events”, “audit the last report”, or “show local research history”. The local dashboard provides a live OKX spot/swap/expiry catalog, role progress, charts, risk gate, bilingual reports and a local replay log. It now requires a Codex CLI evidence review before a dashboard run can be completed; one Codex review covers the role questions and is not twelve independent model agents. See [visual dashboard](docs/visual-dashboard.md). Simple ticker requests should use lightweight market data. Installed `--help` is authoritative for arguments.
+Ask a compatible agent to “open the ATLAS dashboard”, “use ATLAS to research ETH across daily, weekly and monthly trends”, “study BTC after FOMC events”, “audit the last report”, or “show local research history”. The local dashboard fetches and briefly caches the OKX public spot/swap/expiry catalog, then shows role progress, charts, risk decisions, bilingual reports, and local research records. A completed dashboard run requires a Codex CLI evidence review; one review covers the role questions and is not twelve independent model agents. See [visual dashboard](docs/visual-dashboard.md). Simple ticker requests should use lightweight market data. Installed `--help` is authoritative for arguments.
 
 ## Execution and truthfulness
 
@@ -69,4 +75,4 @@ Backtesting uses confirmed data, next-bar execution, costs, chronological out-of
 
 Run `python -m pytest`, `python scripts/validate.py`, `skills-ref validate "$PWD"`, `python -m pip_audit --skip-editable`, and `python -m build`. See the [0.6.0 validation record](docs/validation-report-v0.6.md) for executed results and the [acceptance matrix](docs/acceptance-matrix.md) for remaining scope. The earlier [0.3.0 validation record](docs/validation-report-v0.3.en.md) remains archived. Format validation does not establish client integration or trading effectiveness.
 
-[MIT license](LICENSE). Public release, Marketplace approval, Windows/Linux execution and untested client integrations are not implied. [Publishing preparation](docs/publishing.md), [data provenance](docs/data-provenance.md), [architecture](docs/architecture.md), [security](references/security.md).
+[MIT license](LICENSE). The source is publicly hosted on GitHub but has not been published to the OKX Marketplace. Marketplace approval, Windows/Linux execution, and untested client integrations are not implied. [Publishing preparation](docs/publishing.md), [data provenance](docs/data-provenance.md), [architecture](docs/architecture.md), [security](references/security.md).
