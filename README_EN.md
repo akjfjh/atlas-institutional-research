@@ -1,5 +1,7 @@
 # ATLAS — Institutional Trading Intelligence
 
+[简体中文](README.md) · [English](README_EN.md)
+
 An independent, local crypto research engine and Agent Skill using OKX market data, a structured research graph, technical calculations, reproducible backtests, audit and local memory. “Institutional” describes the workflow; it does not imply endorsement by OKX, the Federal Reserve or a financial institution. No profitability or win-rate improvement is promised.
 
 ## Dashboard preview
@@ -53,7 +55,7 @@ Ask a compatible agent to “open the ATLAS dashboard”, “use ATLAS to resear
 
 ## Execution and truthfulness
 
-The coordinator schedules twelve roles: macro, Fed, news, technical, sentiment, historical/backtest, BTC specialist, ETH specialist, independent risk control, strategy and chief review. The specialists use aligned confirmed UTC daily BTC/ETH bars of matching market and quote type to describe relative returns, realized volatility and drawdown. The risk officer reports price freshness, support/resistance, exposure, capital budget, exchange constraints and entry veto to strategy and chief review. Validated structured results, evidence references, messages, revisions and review issues share a Research ID. Bounded rework does not require finding a trade.
+The coordinator schedules twelve roles: macro, Fed, news, technical, entry timing, sentiment, historical/backtest, BTC specialist, ETH specialist, independent risk control, strategy and chief review. The specialists use aligned confirmed UTC daily BTC/ETH bars of matching market and quote type to describe relative returns, realized volatility and drawdown. The risk officer reports price freshness, support/resistance, exposure, capital budget, exchange constraints and entry veto to strategy and chief review. Validated structured results, evidence references, messages, revisions and review issues share a Research ID. Bounded rework does not require finding a trade.
 
 `--engine codex` is the default and requires a completed read-only Codex evidence review. `--engine deterministic` is an explicit diagnostic mode for numerical analysis without an external model. `--engine host` exposes tasks for real host-managed independent agents and accepts `atlas submit` JSON. `--engine llm` uses an explicitly configured compatible provider. Reports identify the mode accurately; deterministic roles are not claimed as separate LLM researchers.
 
@@ -65,6 +67,6 @@ Backtesting uses confirmed data, next-bar execution, costs, chronological out-of
 
 ## Validation and release
 
-Run `python -m pytest`, `python scripts/validate.py`, `skills-ref validate "$PWD"`, `python -m pip_audit --skip-editable`, and `python -m build`. See the [0.4.0 validation record](docs/validation-report-v0.4.md) for executed results and the [acceptance matrix](docs/acceptance-matrix.md) for remaining scope. The earlier [0.3.0 validation record](docs/validation-report-v0.3.en.md) remains archived. Format validation does not establish client integration or trading effectiveness.
+Run `python -m pytest`, `python scripts/validate.py`, `skills-ref validate "$PWD"`, `python -m pip_audit --skip-editable`, and `python -m build`. See the [0.6.0 validation record](docs/validation-report-v0.6.md) for executed results and the [acceptance matrix](docs/acceptance-matrix.md) for remaining scope. The earlier [0.3.0 validation record](docs/validation-report-v0.3.en.md) remains archived. Format validation does not establish client integration or trading effectiveness.
 
 [MIT license](LICENSE). Public release, Marketplace approval, Windows/Linux execution and untested client integrations are not implied. [Publishing preparation](docs/publishing.md), [data provenance](docs/data-provenance.md), [architecture](docs/architecture.md), [security](references/security.md).
