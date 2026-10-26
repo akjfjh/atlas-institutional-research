@@ -83,6 +83,14 @@ def copy_skill(source: Path, target: Path) -> list[str]:
                     dest.parent.mkdir(parents=True,exist_ok=True)
                     shutil.copy2(file,dest)
                     copied.append('docs/examples/'+file.name)
+        images=source/'docs'/'images'
+        if images.is_dir():
+            for file in images.iterdir():
+                if file.is_file() and not file.is_symlink() and file.suffix in {'.jpg','.jpeg','.png','.webp'}:
+                    dest=staged/'docs'/'images'/file.name
+                    dest.parent.mkdir(parents=True,exist_ok=True)
+                    shutil.copy2(file,dest)
+                    copied.append('docs/images/'+file.name)
         old_marker = target / '.atlas-runtime.json'
         marker = old_marker.read_text() if old_marker.is_file() else None
         if target.exists():
