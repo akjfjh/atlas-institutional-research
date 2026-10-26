@@ -1,0 +1,313 @@
+{
+  "$defs": {
+    "Confidence": {
+      "additionalProperties": false,
+      "properties": {
+        "level": {
+          "default": "low",
+          "enum": [
+            "low",
+            "moderate",
+            "high"
+          ],
+          "title": "Level",
+          "type": "string"
+        },
+        "calibrated": {
+          "default": false,
+          "title": "Calibrated",
+          "type": "boolean"
+        },
+        "probability": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Probability"
+        },
+        "basis": {
+          "default": "Evidence completeness; not a win rate.",
+          "title": "Basis",
+          "type": "string"
+        }
+      },
+      "title": "Confidence",
+      "type": "object"
+    },
+    "Finding": {
+      "additionalProperties": false,
+      "properties": {
+        "claim": {
+          "title": "Claim",
+          "type": "string"
+        },
+        "claim_en": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Claim En"
+        },
+        "evidence_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Evidence Ids",
+          "type": "array"
+        },
+        "kind": {
+          "default": "inference",
+          "enum": [
+            "fact",
+            "inference",
+            "hypothesis"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "direction": {
+          "default": "neutral",
+          "enum": [
+            "bullish",
+            "bearish",
+            "neutral"
+          ],
+          "title": "Direction",
+          "type": "string"
+        }
+      },
+      "required": [
+        "claim",
+        "evidence_ids"
+      ],
+      "title": "Finding",
+      "type": "object"
+    },
+    "Request": {
+      "additionalProperties": false,
+      "properties": {
+        "to_agent": {
+          "title": "To Agent",
+          "type": "string"
+        },
+        "reason": {
+          "title": "Reason",
+          "type": "string"
+        },
+        "evidence_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Evidence Ids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "to_agent",
+        "reason"
+      ],
+      "title": "Request",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "research_id": {
+      "title": "Research Id",
+      "type": "string"
+    },
+    "agent_id": {
+      "enum": [
+        "chief",
+        "macro",
+        "fed",
+        "news",
+        "technical",
+        "sentiment",
+        "backtest",
+        "risk_control",
+        "trading",
+        "btc_specialist",
+        "eth_specialist"
+      ],
+      "title": "Agent Id",
+      "type": "string"
+    },
+    "asset": {
+      "title": "Asset",
+      "type": "string"
+    },
+    "instrument_id": {
+      "title": "Instrument Id",
+      "type": "string"
+    },
+    "task": {
+      "title": "Task",
+      "type": "string"
+    },
+    "timeframes": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Timeframes",
+      "type": "array"
+    },
+    "data_sources": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Data Sources",
+      "type": "array"
+    },
+    "data_timestamps": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Data Timestamps",
+      "type": "array"
+    },
+    "evidence": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Evidence",
+      "type": "array"
+    },
+    "findings": {
+      "items": {
+        "$ref": "#/$defs/Finding"
+      },
+      "title": "Findings",
+      "type": "array"
+    },
+    "market_regime": {
+      "default": "unknown",
+      "title": "Market Regime",
+      "type": "string"
+    },
+    "bullish_arguments": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Bullish Arguments",
+      "type": "array"
+    },
+    "bearish_arguments": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Bearish Arguments",
+      "type": "array"
+    },
+    "uncertainties": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Uncertainties",
+      "type": "array"
+    },
+    "uncertainties_en": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Uncertainties En",
+      "type": "array"
+    },
+    "contradictions": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Contradictions",
+      "type": "array"
+    },
+    "contradictions_en": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Contradictions En",
+      "type": "array"
+    },
+    "summary_en": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Summary En"
+    },
+    "confidence": {
+      "$ref": "#/$defs/Confidence"
+    },
+    "requests_to_other_agents": {
+      "items": {
+        "$ref": "#/$defs/Request"
+      },
+      "title": "Requests To Other Agents",
+      "type": "array"
+    },
+    "status": {
+      "default": "partial",
+      "enum": [
+        "complete",
+        "partial",
+        "blocked"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "version": {
+      "default": 1,
+      "minimum": 1,
+      "title": "Version",
+      "type": "integer"
+    },
+    "input_versions": {
+      "additionalProperties": {
+        "type": "integer"
+      },
+      "title": "Input Versions",
+      "type": "object"
+    },
+    "revised_reason": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Revised Reason"
+    },
+    "payload": {
+      "additionalProperties": true,
+      "title": "Payload",
+      "type": "object"
+    }
+  },
+  "required": [
+    "research_id",
+    "agent_id",
+    "asset",
+    "instrument_id",
+    "task",
+    "timeframes"
+  ],
+  "title": "AgentResult",
+  "type": "object"
+}

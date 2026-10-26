@@ -1,0 +1,13 @@
+# Data provenance
+
+ATLAS uses official OKX CLI commands verified against help/source and an explicit read allowlist; a configured MCP read bridge can be used when actually available. Official public REST is the fallback. Provider metadata records the chosen route and errors from unavailable earlier routes. Root `docs/provider-verification.md` records actual live/API checks and capability versions.
+
+Every source has identity, instrument/series, units, observation time, retrieval time, timezone, freshness and quality flags. Raw OHLCV open timestamps are UTC milliseconds; confirmed daily/weekly/monthly bars use explicit UTC definitions. Spot, swap, mark and index prices remain labeled independently. Cache provenance retains the original timestamps.
+
+BTC and ETH specialists use an extra read-only `specialist_markets` snapshot. The collector verifies both instrument IDs and fetches same-type, same-quote tickers and confirmed UTC daily bars. The local calculation requires 31 consecutive aligned daily closes for a 30-day comparison; missing days, different market types, different quotes or stale source data remain visible as unavailable or review issues. The resulting return spread, price-ratio change, realized volatility and drawdown are descriptive quantities. Market-cap dominance, ETH on-chain activity and a forecast probability need separate data and are not inferred from price bars. Raw specialist bars and peer ticker carry instrument-specific evidence IDs so audit can recompute the conclusion.
+
+Supplemental macro and event sources use FRED, Federal Reserve and other official publications when available. Retrieved/latest observations are not assumed to be original releases. Consensus expectations, historical release vintages, licensed PMI/social/derivative detail and authenticated OKX news may be absent. A missing required domain blocks a full committee approval. There is no fabricated replacement feed.
+
+Publication time and event time are separate. First availability drives event-study price alignment. News dates are not silently promoted to event occurrence dates. Event overlap and coincident information limit causal inference. An input field that cannot be verified remains unknown.
+
+Network transport uses bounded request budgets, timeouts, cache keys and rate control. External source text cannot become command authority. Outgoing provider requests contain needed public query parameters; user secrets stay in official local authentication tooling. Optional user-configured model service receives only selected research context, which is a separate disclosed mode.

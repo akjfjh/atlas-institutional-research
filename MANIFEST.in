@@ -1,0 +1,13 @@
+include SKILL.md LICENSE CHANGELOG.md README.md README_EN.md requirements.lock
+recursive-include agents *.yaml
+recursive-include references *.md *.json
+recursive-include schemas *.json
+recursive-include scripts *.py
+recursive-include atlas/web/static *.html *.css *.js
+recursive-include docs *.md *.json
+recursive-include docs/examples *.png
+recursive-include docs/images *.jpg *.jpeg *.png *.webp
+exclude docs/user-requirements.md docs/engineering-contract.md
+prune docs/upstream
+include docs/upstream/source-lock.json docs/upstream/NOTICE.md
+global-exclude *.py[cod] *.db *.sqlite* .atlas-runtime.json .env

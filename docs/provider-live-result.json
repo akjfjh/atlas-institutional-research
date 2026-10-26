@@ -1,0 +1,60 @@
+{
+  "retrieved_at": "2026-10-26T05:14:33.137542+00:00",
+  "elapsed_seconds": 11.73,
+  "instrument_id": "ETH-USDT-SWAP",
+  "mode": "live",
+  "ticker": {
+    "last": 2322.39,
+    "ts": 1792991673573,
+    "instrument_id": "ETH-USDT-SWAP",
+    "price_basis": "perpetual_last",
+    "source": "okx_cli",
+    "retrieved_at": "2026-10-26T05:14:34.368213+00:00",
+    "freshness_seconds": 0.4270000457763672
+  },
+  "candles": {
+    "1D": 299,
+    "1W": 299,
+    "1M": 81
+  },
+  "derivatives": {
+    "depth_imbalance": -0.7755583031217474,
+    "spread_bps": 0.04306214944812961,
+    "funding_rate": 4.44594487297e-05,
+    "funding_time": "1793001600000",
+    "open_interest": 6251844.800000019,
+    "open_interest_unit": "contracts",
+    "mark_price": 2322.28
+  },
+  "macro_available": [
+    "CPIAUCSL",
+    "PAYEMS",
+    "PCEPI",
+    "PCEPILFE",
+    "UNRATE",
+    "CPILFESL",
+    "GDPC1",
+    "DGS2",
+    "DTWEXBGS",
+    "DGS10",
+    "DFII10",
+    "T10Y2Y",
+    "NFCI",
+    "M2SL",
+    "WALCL",
+    "DFEDTARU",
+    "SP500"
+  ],
+  "fed_events": 30,
+  "news_events": 41,
+  "sources": [
+    "okx_cli",
+    "Federal Reserve monetary policy",
+    "Federal Reserve speeches",
+    "okx_public_api",
+    "BLS latest releases",
+    "FRED"
+  ],
+  "requests_used": 27,
+  "errors": []
+}

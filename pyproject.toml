@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "atlas-institutional-research"
+version = "0.6.0"
+description = "Local evidence-based OKX crypto research graph, event studies and reproducible backtests"
+readme = "README_EN.md"
+requires-python = ">=3.11"
+license = "MIT"
+dependencies = ["httpx>=0.28,<1", "pydantic>=2.10,<3", "markdown-it-py>=3,<5"]
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "build>=1,<2", "pip-audit>=2,<3", "PyYAML>=6,<7"]
+mcp = ["mcp>=1,<2"]
+viz = ["matplotlib>=3.9,<4"]
+[project.scripts]
+atlas = "atlas.cli:main"
+[tool.setuptools.packages.find]
+include = ["atlas*"]
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.setuptools.package-data]
+atlas = ["providers/*.json", "web/static/*.html", "web/static/*.css", "web/static/*.js"]

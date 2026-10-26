@@ -1,0 +1,666 @@
+{
+  "$defs": {
+    "AgentResult": {
+      "additionalProperties": false,
+      "properties": {
+        "research_id": {
+          "title": "Research Id",
+          "type": "string"
+        },
+        "agent_id": {
+          "enum": [
+            "chief",
+            "macro",
+            "fed",
+            "news",
+            "technical",
+            "sentiment",
+            "backtest",
+            "risk_control",
+            "trading",
+            "btc_specialist",
+            "eth_specialist"
+          ],
+          "title": "Agent Id",
+          "type": "string"
+        },
+        "asset": {
+          "title": "Asset",
+          "type": "string"
+        },
+        "instrument_id": {
+          "title": "Instrument Id",
+          "type": "string"
+        },
+        "task": {
+          "title": "Task",
+          "type": "string"
+        },
+        "timeframes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Timeframes",
+          "type": "array"
+        },
+        "data_sources": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Data Sources",
+          "type": "array"
+        },
+        "data_timestamps": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Data Timestamps",
+          "type": "array"
+        },
+        "evidence": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Evidence",
+          "type": "array"
+        },
+        "findings": {
+          "items": {
+            "$ref": "#/$defs/Finding"
+          },
+          "title": "Findings",
+          "type": "array"
+        },
+        "market_regime": {
+          "default": "unknown",
+          "title": "Market Regime",
+          "type": "string"
+        },
+        "bullish_arguments": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Bullish Arguments",
+          "type": "array"
+        },
+        "bearish_arguments": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Bearish Arguments",
+          "type": "array"
+        },
+        "uncertainties": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Uncertainties",
+          "type": "array"
+        },
+        "uncertainties_en": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Uncertainties En",
+          "type": "array"
+        },
+        "contradictions": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Contradictions",
+          "type": "array"
+        },
+        "contradictions_en": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Contradictions En",
+          "type": "array"
+        },
+        "summary_en": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Summary En"
+        },
+        "confidence": {
+          "$ref": "#/$defs/Confidence"
+        },
+        "requests_to_other_agents": {
+          "items": {
+            "$ref": "#/$defs/Request"
+          },
+          "title": "Requests To Other Agents",
+          "type": "array"
+        },
+        "status": {
+          "default": "partial",
+          "enum": [
+            "complete",
+            "partial",
+            "blocked"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "version": {
+          "default": 1,
+          "minimum": 1,
+          "title": "Version",
+          "type": "integer"
+        },
+        "input_versions": {
+          "additionalProperties": {
+            "type": "integer"
+          },
+          "title": "Input Versions",
+          "type": "object"
+        },
+        "revised_reason": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Revised Reason"
+        },
+        "payload": {
+          "additionalProperties": true,
+          "title": "Payload",
+          "type": "object"
+        }
+      },
+      "required": [
+        "research_id",
+        "agent_id",
+        "asset",
+        "instrument_id",
+        "task",
+        "timeframes"
+      ],
+      "title": "AgentResult",
+      "type": "object"
+    },
+    "Confidence": {
+      "additionalProperties": false,
+      "properties": {
+        "level": {
+          "default": "low",
+          "enum": [
+            "low",
+            "moderate",
+            "high"
+          ],
+          "title": "Level",
+          "type": "string"
+        },
+        "calibrated": {
+          "default": false,
+          "title": "Calibrated",
+          "type": "boolean"
+        },
+        "probability": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Probability"
+        },
+        "basis": {
+          "default": "Evidence completeness; not a win rate.",
+          "title": "Basis",
+          "type": "string"
+        }
+      },
+      "title": "Confidence",
+      "type": "object"
+    },
+    "Evidence": {
+      "additionalProperties": false,
+      "properties": {
+        "evidence_id": {
+          "title": "Evidence Id",
+          "type": "string"
+        },
+        "source": {
+          "title": "Source",
+          "type": "string"
+        },
+        "source_url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source Url"
+        },
+        "instrument": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Instrument"
+        },
+        "timestamp": {
+          "title": "Timestamp",
+          "type": "string"
+        },
+        "retrieved_at": {
+          "title": "Retrieved At",
+          "type": "string"
+        },
+        "unit": {
+          "default": "mixed",
+          "title": "Unit",
+          "type": "string"
+        },
+        "status": {
+          "default": "observed",
+          "enum": [
+            "observed",
+            "derived",
+            "unavailable",
+            "host_attested"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "quality_flags": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Quality Flags",
+          "type": "array"
+        },
+        "data": {
+          "additionalProperties": true,
+          "title": "Data",
+          "type": "object"
+        },
+        "parent_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Parent Ids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "evidence_id",
+        "source",
+        "timestamp",
+        "retrieved_at"
+      ],
+      "title": "Evidence",
+      "type": "object"
+    },
+    "Finding": {
+      "additionalProperties": false,
+      "properties": {
+        "claim": {
+          "title": "Claim",
+          "type": "string"
+        },
+        "claim_en": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Claim En"
+        },
+        "evidence_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Evidence Ids",
+          "type": "array"
+        },
+        "kind": {
+          "default": "inference",
+          "enum": [
+            "fact",
+            "inference",
+            "hypothesis"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "direction": {
+          "default": "neutral",
+          "enum": [
+            "bullish",
+            "bearish",
+            "neutral"
+          ],
+          "title": "Direction",
+          "type": "string"
+        }
+      },
+      "required": [
+        "claim",
+        "evidence_ids"
+      ],
+      "title": "Finding",
+      "type": "object"
+    },
+    "Request": {
+      "additionalProperties": false,
+      "properties": {
+        "to_agent": {
+          "title": "To Agent",
+          "type": "string"
+        },
+        "reason": {
+          "title": "Reason",
+          "type": "string"
+        },
+        "evidence_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Evidence Ids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "to_agent",
+        "reason"
+      ],
+      "title": "Request",
+      "type": "object"
+    },
+    "ReviewIssue": {
+      "additionalProperties": false,
+      "properties": {
+        "issue_id": {
+          "title": "Issue Id",
+          "type": "string"
+        },
+        "severity": {
+          "enum": [
+            "warning",
+            "error",
+            "critical"
+          ],
+          "title": "Severity",
+          "type": "string"
+        },
+        "responsible_agent": {
+          "title": "Responsible Agent",
+          "type": "string"
+        },
+        "problem": {
+          "title": "Problem",
+          "type": "string"
+        },
+        "required_correction": {
+          "title": "Required Correction",
+          "type": "string"
+        },
+        "evidence": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Evidence",
+          "type": "array"
+        },
+        "status": {
+          "default": "open",
+          "enum": [
+            "open",
+            "resolved"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "correctable": {
+          "default": false,
+          "title": "Correctable",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "severity",
+        "responsible_agent",
+        "problem",
+        "required_correction"
+      ],
+      "title": "ReviewIssue",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "default": "1.2",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "research_id": {
+      "title": "Research Id",
+      "type": "string"
+    },
+    "created_at": {
+      "title": "Created At",
+      "type": "string"
+    },
+    "completed_at": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Completed At"
+    },
+    "asset": {
+      "title": "Asset",
+      "type": "string"
+    },
+    "instrument_id": {
+      "title": "Instrument Id",
+      "type": "string"
+    },
+    "mode": {
+      "default": "full",
+      "enum": [
+        "quick",
+        "full"
+      ],
+      "title": "Mode",
+      "type": "string"
+    },
+    "engine": {
+      "default": "deterministic",
+      "enum": [
+        "deterministic",
+        "host",
+        "llm"
+      ],
+      "title": "Engine",
+      "type": "string"
+    },
+    "language": {
+      "default": "zh",
+      "enum": [
+        "zh",
+        "en"
+      ],
+      "title": "Language",
+      "type": "string"
+    },
+    "required_roles": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Required Roles",
+      "type": "array"
+    },
+    "timeframes": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Timeframes",
+      "type": "array"
+    },
+    "phase": {
+      "default": "DATA_READY",
+      "enum": [
+        "DATA_READY",
+        "RESEARCH_IN_PROGRESS",
+        "CROSS_VALIDATION",
+        "BACKTEST_VALIDATION",
+        "STRATEGY_REVIEW",
+        "FINAL_AUDIT",
+        "APPROVED",
+        "REJECTED",
+        "INSUFFICIENT_DATA"
+      ],
+      "title": "Phase",
+      "type": "string"
+    },
+    "decision": {
+      "default": "INSUFFICIENT_DATA",
+      "enum": [
+        "BULLISH",
+        "BEARISH",
+        "NEUTRAL",
+        "WAIT_FOR_CONFIRMATION",
+        "INSUFFICIENT_DATA"
+      ],
+      "title": "Decision",
+      "type": "string"
+    },
+    "snapshot": {
+      "additionalProperties": true,
+      "title": "Snapshot",
+      "type": "object"
+    },
+    "evidence": {
+      "additionalProperties": {
+        "$ref": "#/$defs/Evidence"
+      },
+      "title": "Evidence",
+      "type": "object"
+    },
+    "results": {
+      "additionalProperties": {
+        "$ref": "#/$defs/AgentResult"
+      },
+      "title": "Results",
+      "type": "object"
+    },
+    "messages": {
+      "items": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "title": "Messages",
+      "type": "array"
+    },
+    "events": {
+      "items": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "title": "Events",
+      "type": "array"
+    },
+    "issues": {
+      "items": {
+        "$ref": "#/$defs/ReviewIssue"
+      },
+      "title": "Issues",
+      "type": "array"
+    },
+    "backtest": {
+      "additionalProperties": true,
+      "title": "Backtest",
+      "type": "object"
+    },
+    "scenarios": {
+      "additionalProperties": true,
+      "title": "Scenarios",
+      "type": "object"
+    },
+    "round": {
+      "default": 0,
+      "title": "Round",
+      "type": "integer"
+    },
+    "version": {
+      "default": 1,
+      "title": "Version",
+      "type": "integer"
+    },
+    "budget": {
+      "additionalProperties": true,
+      "title": "Budget",
+      "type": "object"
+    },
+    "historical_comparisons": {
+      "items": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "title": "Historical Comparisons",
+      "type": "array"
+    },
+    "prior_research_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Prior Research Id"
+    },
+    "prior_observation": {
+      "additionalProperties": true,
+      "title": "Prior Observation",
+      "type": "object"
+    }
+  },
+  "required": [
+    "asset",
+    "instrument_id"
+  ],
+  "title": "ResearchState",
+  "type": "object"
+}

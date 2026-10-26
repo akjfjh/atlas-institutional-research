@@ -1,0 +1,4 @@
+interface:
+  display_name: "ATLAS Research"
+  short_description: "Bilingual BTC/ETH research with independent risk control"
+  default_prompt: "使用 $atlas-institutional-research 研究 BTC-USDT 的日周月趋势，并在报告末尾给出风险控制、关键位和当前能否开仓的判断。"

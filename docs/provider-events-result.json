@@ -1,0 +1,1147 @@
+{
+  "events": [
+    {
+      "event_id": "FOMC-2021-01-27",
+      "event_type": "FOMC",
+      "title": "FOMC official release 2021-01-27",
+      "event_time": "2021-01-28T00:00:00+00:00",
+      "publication_time": "2021-01-27",
+      "first_available_time": "2021-01-28T00:00:00+00:00",
+      "expected_value": null,
+      "actual_value": null,
+      "surprise": null,
+      "source": "Federal Reserve",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20210127a.htm",
+      "affected_assets": [
+        "BTC",
+        "ETH"
+      ],
+      "market_regime": null,
+      "time_precision": "date_only",
+      "quality_flags": [
+        "exact_release_time_not_verified",
+        "conservative_next_UTC_day_entry",
+        "expectations_unavailable"
+      ]
+    },
+    {
+      "event_id": "FOMC-2021-03-17",
+      "event_type": "FOMC",
+      "title": "FOMC official release 2021-03-17",
+      "event_time": "2021-03-18T00:00:00+00:00",
+      "publication_time": "2021-03-17",
+      "first_available_time": "2021-03-18T00:00:00+00:00",
+      "expected_value": null,
+      "actual_value": null,
+      "surprise": null,
+      "source": "Federal Reserve",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20210317a.htm",
+      "affected_assets": [
+        "BTC",
+        "ETH"
+      ],
+      "market_regime": null,
+      "time_precision": "date_only",
+      "quality_flags": [
+        "exact_release_time_not_verified",
+        "conservative_next_UTC_day_entry",
+        "expectations_unavailable"
+      ]
+    },
+    {
+      "event_id": "FOMC-2021-04-28",
+      "event_type": "FOMC",
+      "title": "FOMC official release 2021-04-28",
+      "event_time": "2021-04-29T00:00:00+00:00",
+      "publication_time": "2021-04-28",
+      "first_available_time": "2021-04-29T00:00:00+00:00",
+      "expected_value": null,
+      "actual_value": null,
+      "surprise": null,
+      "source": "Federal Reserve",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20210428a.htm",
+      "affected_assets": [
+        "BTC",
+        "ETH"
+      ],
+      "market_regime": null,
+      "time_precision": "date_only",
+      "quality_flags": [
+        "exact_release_time_not_verified",
+        "conservative_next_UTC_day_entry",
+        "expectations_unavailable"
+      ]
+    },
+    {
+      "event_id": "FOMC-2021-06-16",
+      "event_type": "FOMC",
+      "title": "FOMC official release 2021-06-16",
+      "event_time": "2021-06-17T00:00:00+00:00",
+      "publication_time": "2021-06-16",
+      "first_available_time": "2021-06-17T00:00:00+00:00",
+      "expected_value": null,
+      "actual_value": null,
+      "surprise": null,
+      "source": "Federal Reserve",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20210616a.htm",
+      "affected_assets": [
+        "BTC",
+        "ETH"
+      ],
+      "market_regime": null,
+      "time_precision": "date_only",
+      "quality_flags": [
+        "exact_release_time_not_verified",
+        "conservative_next_UTC_day_entry",
+        "expectations_unavailable"
+      ]
+    },
+    {
+      "event_id": "FOMC-2021-07-28",
+      "event_type": "FOMC",
+      "title": "FOMC official release 2021-07-28",
+      "event_time": "2021-07-29T00:00:00+00:00",
+      "publication_time": "2021-07-28",
+      "first_available_time": "2021-07-29T00:00:00+00:00",
+      "expected_value": null,
+      "actual_value": null,
+      "surprise": null,
+      "source": "Federal Reserve",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20210728a.htm",
+      "affected_assets": [
+        "BTC",
+        "ETH"
+      ],
+      "market_regime": null,
+      "time_precision": "date_only",
+      "quality_flags": [
+        "exact_release_time_not_verified",
+        "conservative_next_UTC_day_entry",
+        "expectations_unavailable"
+      ]
+    },
+    {
+      "event_id": "FOMC-2021-09-22",
+      "event_type": "FOMC",
+      "title": "FOMC official release 2021-09-22",
+      "event_time": "2021-09-23T00:00:00+00:00",
+      "publication_time": "2021-09-22",
+      "first_available_time": "2021-09-23T00:00:00+00:00",
+      "expected_value": null,
+      "actual_value": null,
+      "surprise": null,
+      "source": "Federal Reserve",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20210922a.htm",
+      "affected_assets": [
+        "BTC",
+        "ETH"
+      ],
+      "market_regime": null,
+      "time_precision": "date_only",
+      "quality_flags": [
+        "exact_release_time_not_verified",
+        "conservative_next_UTC_day_entry",
+        "expectations_unavailable"
+      ]
+    },
+    {
+      "event_id": "FOMC-2021-11-03",
+      "event_type": "FOMC",
+      "title": "FOMC official release 2021-11-03",
+      "event_time": "2021-11-04T00:00:00+00:00",
+      "publication_time": "2021-11-03",
+      "first_available_time": "2021-11-04T00:00:00+00:00",
+      "expected_value": null,
+      "actual_value": null,
+      "surprise": null,
+      "source": "Federal Reserve",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20211103a.htm",
+      "affected_assets": [
+        "BTC",
+        "ETH"
+      ],
+      "market_regime": null,
+      "time_precision": "date_only",
+      "quality_flags": [
+        "exact_release_time_not_verified",
+        "conservative_next_UTC_day_entry",
+        "expectations_unavailable"
+      ]
+    },
+    {
+      "event_id": "FOMC-2021-12-15",
+      "event_type": "FOMC",
+      "title": "FOMC official release 2021-12-15",
+      "event_time": "2021-12-16T00:00:00+00:00",
+      "publication_time": "2021-12-15",
+      "first_available_time": "2021-12-16T00:00:00+00:00",
+      "expected_value": null,
+      "actual_value": null,
+      "surprise": null,
+      "source": "Federal Reserve",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20211215a.htm",
+      "affected_assets": [
+        "BTC",
+        "ETH"
+      ],
+      "market_regime": null,
+      "time_precision": "date_only",
+      "quality_flags": [
+        "exact_release_time_not_verified",
+        "conservative_next_UTC_day_entry",
+        "expectations_unavailable"
+      ]
+    },
+    {
+      "event_id": "FOMC-2022-01-26",
+      "event_type": "FOMC",
+      "title": "FOMC official release 2022-01-26",
+      "event_time": "2022-01-27T00:00:00+00:00",
+      "publication_time": "2022-01-26",
+      "first_available_time": "2022-01-27T00:00:00+00:00",
+      "expected_value": null,
+      "actual_value": null,
+      "surprise": null,
+      "source": "Federal Reserve",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20220126a.htm",
+      "affected_assets": [
+        "BTC",
+        "ETH"
+      ],
+      "market_regime": null,
+      "time_precision": "date_only",
+      "quality_flags": [
+        "exact_release_time_not_verified",
+        "conservative_next_UTC_day_entry",
+        "expectations_unavailable"
+      ]
+    },
+    {
+      "event_id": "FOMC-2022-03-16",
+      "event_type": "FOMC",
+      "title": "FOMC official release 2022-03-16",
+      "event_time": "2022-03-17T00:00:00+00:00",
+      "publication_time": "2022-03-16",
+      "first_available_time": "2022-03-17T00:00:00+00:00",
+      "expected_value": null,
+      "actual_value": null,
+      "surprise": null,
+      "source": "Federal Reserve",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20220316a.htm",
+      "affected_assets": [
+        "BTC",
+        "ETH"
+      ],
+      "market_regime": null,
+      "time_precision": "date_only",
+      "quality_flags": [
+        "exact_release_time_not_verified",
+        "conservative_next_UTC_day_entry",
+        "expectations_unavailable"
+      ]
+    },
+    {
+      "event_id": "FOMC-2022-05-04",
+      "event_type": "FOMC",
+      "title": "FOMC official release 2022-05-04",
+      "event_time": "2022-05-05T00:00:00+00:00",
+      "publication_time": "2022-05-04",
+      "first_available_time": "2022-05-05T00:00:00+00:00",
+      "expected_value": null,
+      "actual_value": null,
+      "surprise": null,
+      "source": "Federal Reserve",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20220504a.htm",
+      "affected_assets": [
+        "BTC",
+        "ETH"
+      ],
+      "market_regime": null,
+      "time_precision": "date_only",
+      "quality_flags": [
+        "exact_release_time_not_verified",
+        "conservative_next_UTC_day_entry",
+        "expectations_unavailable"
+      ]
+    },
+    {
+      "event_id": "FOMC-2022-06-15",
+      "event_type": "FOMC",
+      "title": "FOMC official release 2022-06-15",
+      "event_time": "2022-06-16T00:00:00+00:00",
+      "publication_time": "2022-06-15",
+      "first_available_time": "2022-06-16T00:00:00+00:00",
+      "expected_value": null,
+      "actual_value": null,
+      "surprise": null,
+      "source": "Federal Reserve",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20220615a.htm",
+      "affected_assets": [
+        "BTC",
+        "ETH"
+      ],
+      "market_regime": null,
+      "time_precision": "date_only",
+      "quality_flags": [
+        "exact_release_time_not_verified",
+        "conservative_next_UTC_day_entry",
+        "expectations_unavailable"
+      ]
+    },
+    {
+      "event_id": "FOMC-2022-07-27",
+      "event_type": "FOMC",
+      "title": "FOMC official release 2022-07-27",
+      "event_time": "2022-07-28T00:00:00+00:00",
+      "publication_time": "2022-07-27",
+      "first_available_time": "2022-07-28T00:00:00+00:00",
+      "expected_value": null,
+      "actual_value": null,
+      "surprise": null,
+      "source": "Federal Reserve",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20220727a.htm",
+      "affected_assets": [
+        "BTC",
+        "ETH"
+      ],
+      "market_regime": null,
+      "time_precision": "date_only",
+      "quality_flags": [
+        "exact_release_time_not_verified",
+        "conservative_next_UTC_day_entry",
+        "expectations_unavailable"
+      ]
+    },
+    {
+      "event_id": "FOMC-2022-09-21",
+      "event_type": "FOMC",
+      "title": "FOMC official release 2022-09-21",
+      "event_time": "2022-09-22T00:00:00+00:00",
+      "publication_time": "2022-09-21",
+      "first_available_time": "2022-09-22T00:00:00+00:00",
+      "expected_value": null,
+      "actual_value": null,
+      "surprise": null,
+      "source": "Federal Reserve",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20220921a.htm",
+      "affected_assets": [
+        "BTC",
+        "ETH"
+      ],
+      "market_regime": null,
+      "time_precision": "date_only",
+      "quality_flags": [
+        "exact_release_time_not_verified",
+        "conservative_next_UTC_day_entry",
+        "expectations_unavailable"
+      ]
+    },
+    {
+      "event_id": "FOMC-2022-11-02",
+      "event_type": "FOMC",
+      "title": "FOMC official release 2022-11-02",
+      "event_time": "2022-11-03T00:00:00+00:00",
+      "publication_time": "2022-11-02",
+      "first_available_time": "2022-11-03T00:00:00+00:00",
+      "expected_value": null,
+      "actual_value": null,
+      "surprise": null,
+      "source": "Federal Reserve",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20221102a.htm",
+      "affected_assets": [
+        "BTC",
+        "ETH"
+      ],
+      "market_regime": null,
+      "time_precision": "date_only",
+      "quality_flags": [
+        "exact_release_time_not_verified",
+        "conservative_next_UTC_day_entry",
+        "expectations_unavailable"
+      ]
+    },
+    {
+      "event_id": "FOMC-2022-12-14",
+      "event_type": "FOMC",
+      "title": "FOMC official release 2022-12-14",
+      "event_time": "2022-12-15T00:00:00+00:00",
+      "publication_time": "2022-12-14",
+      "first_available_time": "2022-12-15T00:00:00+00:00",
+      "expected_value": null,
+      "actual_value": null,
+      "surprise": null,
+      "source": "Federal Reserve",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20221214a.htm",
+      "affected_assets": [
+        "BTC",
+        "ETH"
+      ],
+      "market_regime": null,
+      "time_precision": "date_only",
+      "quality_flags": [
+        "exact_release_time_not_verified",
+        "conservative_next_UTC_day_entry",
+        "expectations_unavailable"
+      ]
+    },
+    {
+      "event_id": "FOMC-2023-02-01",
+      "event_type": "FOMC",
+      "title": "FOMC official release 2023-02-01",
+      "event_time": "2023-02-02T00:00:00+00:00",
+      "publication_time": "2023-02-01",
+      "first_available_time": "2023-02-02T00:00:00+00:00",
+      "expected_value": null,
+      "actual_value": null,
+      "surprise": null,
+      "source": "Federal Reserve",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20230201a.htm",
+      "affected_assets": [
+        "BTC",
+        "ETH"
+      ],
+      "market_regime": null,
+      "time_precision": "date_only",
+      "quality_flags": [
+        "exact_release_time_not_verified",
+        "conservative_next_UTC_day_entry",
+        "expectations_unavailable"
+      ]
+    },
+    {
+      "event_id": "FOMC-2023-03-22",
+      "event_type": "FOMC",
+      "title": "FOMC official release 2023-03-22",
+      "event_time": "2023-03-23T00:00:00+00:00",
+      "publication_time": "2023-03-22",
+      "first_available_time": "2023-03-23T00:00:00+00:00",
+      "expected_value": null,
+      "actual_value": null,
+      "surprise": null,
+      "source": "Federal Reserve",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20230322a.htm",
+      "affected_assets": [
+        "BTC",
+        "ETH"
+      ],
+      "market_regime": null,
+      "time_precision": "date_only",
+      "quality_flags": [
+        "exact_release_time_not_verified",
+        "conservative_next_UTC_day_entry",
+        "expectations_unavailable"
+      ]
+    },
+    {
+      "event_id": "FOMC-2023-05-03",
+      "event_type": "FOMC",
+      "title": "FOMC official release 2023-05-03",
+      "event_time": "2023-05-04T00:00:00+00:00",
+      "publication_time": "2023-05-03",
+      "first_available_time": "2023-05-04T00:00:00+00:00",
+      "expected_value": null,
+      "actual_value": null,
+      "surprise": null,
+      "source": "Federal Reserve",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20230503a.htm",
+      "affected_assets": [
+        "BTC",
+        "ETH"
+      ],
+      "market_regime": null,
+      "time_precision": "date_only",
+      "quality_flags": [
+        "exact_release_time_not_verified",
+        "conservative_next_UTC_day_entry",
+        "expectations_unavailable"
+      ]
+    },
+    {
+      "event_id": "FOMC-2023-06-14",
+      "event_type": "FOMC",
+      "title": "FOMC official release 2023-06-14",
+      "event_time": "2023-06-15T00:00:00+00:00",
+      "publication_time": "2023-06-14",
+      "first_available_time": "2023-06-15T00:00:00+00:00",
+      "expected_value": null,
+      "actual_value": null,
+      "surprise": null,
+      "source": "Federal Reserve",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20230614a.htm",
+      "affected_assets": [
+        "BTC",
+        "ETH"
+      ],
+      "market_regime": null,
+      "time_precision": "date_only",
+      "quality_flags": [
+        "exact_release_time_not_verified",
+        "conservative_next_UTC_day_entry",
+        "expectations_unavailable"
+      ]
+    },
+    {
+      "event_id": "FOMC-2023-07-26",
+      "event_type": "FOMC",
+      "title": "FOMC official release 2023-07-26",
+      "event_time": "2023-07-27T00:00:00+00:00",
+      "publication_time": "2023-07-26",
+      "first_available_time": "2023-07-27T00:00:00+00:00",
+      "expected_value": null,
+      "actual_value": null,
+      "surprise": null,
+      "source": "Federal Reserve",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20230726a.htm",
+      "affected_assets": [
+        "BTC",
+        "ETH"
+      ],
+      "market_regime": null,
+      "time_precision": "date_only",
+      "quality_flags": [
+        "exact_release_time_not_verified",
+        "conservative_next_UTC_day_entry",
+        "expectations_unavailable"
+      ]
+    },
+    {
+      "event_id": "FOMC-2023-09-20",
+      "event_type": "FOMC",
+      "title": "FOMC official release 2023-09-20",
+      "event_time": "2023-09-21T00:00:00+00:00",
+      "publication_time": "2023-09-20",
+      "first_available_time": "2023-09-21T00:00:00+00:00",
+      "expected_value": null,
+      "actual_value": null,
+      "surprise": null,
+      "source": "Federal Reserve",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20230920a.htm",
+      "affected_assets": [
+        "BTC",
+        "ETH"
+      ],
+      "market_regime": null,
+      "time_precision": "date_only",
+      "quality_flags": [
+        "exact_release_time_not_verified",
+        "conservative_next_UTC_day_entry",
+        "expectations_unavailable"
+      ]
+    },
+    {
+      "event_id": "FOMC-2023-11-01",
+      "event_type": "FOMC",
+      "title": "FOMC official release 2023-11-01",
+      "event_time": "2023-11-02T00:00:00+00:00",
+      "publication_time": "2023-11-01",
+      "first_available_time": "2023-11-02T00:00:00+00:00",
+      "expected_value": null,
+      "actual_value": null,
+      "surprise": null,
+      "source": "Federal Reserve",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20231101a.htm",
+      "affected_assets": [
+        "BTC",
+        "ETH"
+      ],
+      "market_regime": null,
+      "time_precision": "date_only",
+      "quality_flags": [
+        "exact_release_time_not_verified",
+        "conservative_next_UTC_day_entry",
+        "expectations_unavailable"
+      ]
+    },
+    {
+      "event_id": "FOMC-2023-12-13",
+      "event_type": "FOMC",
+      "title": "FOMC official release 2023-12-13",
+      "event_time": "2023-12-14T00:00:00+00:00",
+      "publication_time": "2023-12-13",
+      "first_available_time": "2023-12-14T00:00:00+00:00",
+      "expected_value": null,
+      "actual_value": null,
+      "surprise": null,
+      "source": "Federal Reserve",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20231213a.htm",
+      "affected_assets": [
+        "BTC",
+        "ETH"
+      ],
+      "market_regime": null,
+      "time_precision": "date_only",
+      "quality_flags": [
+        "exact_release_time_not_verified",
+        "conservative_next_UTC_day_entry",
+        "expectations_unavailable"
+      ]
+    },
+    {
+      "event_id": "FOMC-2024-01-31",
+      "event_type": "FOMC",
+      "title": "FOMC official release 2024-01-31",
+      "event_time": "2024-02-01T00:00:00+00:00",
+      "publication_time": "2024-01-31",
+      "first_available_time": "2024-02-01T00:00:00+00:00",
+      "expected_value": null,
+      "actual_value": null,
+      "surprise": null,
+      "source": "Federal Reserve",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20240131a.htm",
+      "affected_assets": [
+        "BTC",
+        "ETH"
+      ],
+      "market_regime": null,
+      "time_precision": "date_only",
+      "quality_flags": [
+        "exact_release_time_not_verified",
+        "conservative_next_UTC_day_entry",
+        "expectations_unavailable"
+      ]
+    },
+    {
+      "event_id": "FOMC-2024-03-20",
+      "event_type": "FOMC",
+      "title": "FOMC official release 2024-03-20",
+      "event_time": "2024-03-21T00:00:00+00:00",
+      "publication_time": "2024-03-20",
+      "first_available_time": "2024-03-21T00:00:00+00:00",
+      "expected_value": null,
+      "actual_value": null,
+      "surprise": null,
+      "source": "Federal Reserve",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20240320a.htm",
+      "affected_assets": [
+        "BTC",
+        "ETH"
+      ],
+      "market_regime": null,
+      "time_precision": "date_only",
+      "quality_flags": [
+        "exact_release_time_not_verified",
+        "conservative_next_UTC_day_entry",
+        "expectations_unavailable"
+      ]
+    },
+    {
+      "event_id": "FOMC-2024-05-01",
+      "event_type": "FOMC",
+      "title": "FOMC official release 2024-05-01",
+      "event_time": "2024-05-02T00:00:00+00:00",
+      "publication_time": "2024-05-01",
+      "first_available_time": "2024-05-02T00:00:00+00:00",
+      "expected_value": null,
+      "actual_value": null,
+      "surprise": null,
+      "source": "Federal Reserve",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20240501a.htm",
+      "affected_assets": [
+        "BTC",
+        "ETH"
+      ],
+      "market_regime": null,
+      "time_precision": "date_only",
+      "quality_flags": [
+        "exact_release_time_not_verified",
+        "conservative_next_UTC_day_entry",
+        "expectations_unavailable"
+      ]
+    },
+    {
+      "event_id": "FOMC-2024-06-12",
+      "event_type": "FOMC",
+      "title": "FOMC official release 2024-06-12",
+      "event_time": "2024-06-13T00:00:00+00:00",
+      "publication_time": "2024-06-12",
+      "first_available_time": "2024-06-13T00:00:00+00:00",
+      "expected_value": null,
+      "actual_value": null,
+      "surprise": null,
+      "source": "Federal Reserve",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20240612a.htm",
+      "affected_assets": [
+        "BTC",
+        "ETH"
+      ],
+      "market_regime": null,
+      "time_precision": "date_only",
+      "quality_flags": [
+        "exact_release_time_not_verified",
+        "conservative_next_UTC_day_entry",
+        "expectations_unavailable"
+      ]
+    },
+    {
+      "event_id": "FOMC-2024-07-31",
+      "event_type": "FOMC",
+      "title": "FOMC official release 2024-07-31",
+      "event_time": "2024-08-01T00:00:00+00:00",
+      "publication_time": "2024-07-31",
+      "first_available_time": "2024-08-01T00:00:00+00:00",
+      "expected_value": null,
+      "actual_value": null,
+      "surprise": null,
+      "source": "Federal Reserve",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20240731a.htm",
+      "affected_assets": [
+        "BTC",
+        "ETH"
+      ],
+      "market_regime": null,
+      "time_precision": "date_only",
+      "quality_flags": [
+        "exact_release_time_not_verified",
+        "conservative_next_UTC_day_entry",
+        "expectations_unavailable"
+      ]
+    },
+    {
+      "event_id": "FOMC-2024-09-18",
+      "event_type": "FOMC",
+      "title": "FOMC official release 2024-09-18",
+      "event_time": "2024-09-19T00:00:00+00:00",
+      "publication_time": "2024-09-18",
+      "first_available_time": "2024-09-19T00:00:00+00:00",
+      "expected_value": null,
+      "actual_value": null,
+      "surprise": null,
+      "source": "Federal Reserve",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20240918a.htm",
+      "affected_assets": [
+        "BTC",
+        "ETH"
+      ],
+      "market_regime": null,
+      "time_precision": "date_only",
+      "quality_flags": [
+        "exact_release_time_not_verified",
+        "conservative_next_UTC_day_entry",
+        "expectations_unavailable"
+      ]
+    },
+    {
+      "event_id": "FOMC-2024-11-07",
+      "event_type": "FOMC",
+      "title": "FOMC official release 2024-11-07",
+      "event_time": "2024-11-08T00:00:00+00:00",
+      "publication_time": "2024-11-07",
+      "first_available_time": "2024-11-08T00:00:00+00:00",
+      "expected_value": null,
+      "actual_value": null,
+      "surprise": null,
+      "source": "Federal Reserve",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20241107a.htm",
+      "affected_assets": [
+        "BTC",
+        "ETH"
+      ],
+      "market_regime": null,
+      "time_precision": "date_only",
+      "quality_flags": [
+        "exact_release_time_not_verified",
+        "conservative_next_UTC_day_entry",
+        "expectations_unavailable"
+      ]
+    },
+    {
+      "event_id": "FOMC-2024-12-18",
+      "event_type": "FOMC",
+      "title": "FOMC official release 2024-12-18",
+      "event_time": "2024-12-19T00:00:00+00:00",
+      "publication_time": "2024-12-18",
+      "first_available_time": "2024-12-19T00:00:00+00:00",
+      "expected_value": null,
+      "actual_value": null,
+      "surprise": null,
+      "source": "Federal Reserve",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20241218a.htm",
+      "affected_assets": [
+        "BTC",
+        "ETH"
+      ],
+      "market_regime": null,
+      "time_precision": "date_only",
+      "quality_flags": [
+        "exact_release_time_not_verified",
+        "conservative_next_UTC_day_entry",
+        "expectations_unavailable"
+      ]
+    },
+    {
+      "event_id": "FOMC-2025-01-29",
+      "event_type": "FOMC",
+      "title": "FOMC official release 2025-01-29",
+      "event_time": "2025-01-30T00:00:00+00:00",
+      "publication_time": "2025-01-29",
+      "first_available_time": "2025-01-30T00:00:00+00:00",
+      "expected_value": null,
+      "actual_value": null,
+      "surprise": null,
+      "source": "Federal Reserve",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20250129a.htm",
+      "affected_assets": [
+        "BTC",
+        "ETH"
+      ],
+      "market_regime": null,
+      "time_precision": "date_only",
+      "quality_flags": [
+        "exact_release_time_not_verified",
+        "conservative_next_UTC_day_entry",
+        "expectations_unavailable"
+      ]
+    },
+    {
+      "event_id": "FOMC-2025-03-19",
+      "event_type": "FOMC",
+      "title": "FOMC official release 2025-03-19",
+      "event_time": "2025-03-20T00:00:00+00:00",
+      "publication_time": "2025-03-19",
+      "first_available_time": "2025-03-20T00:00:00+00:00",
+      "expected_value": null,
+      "actual_value": null,
+      "surprise": null,
+      "source": "Federal Reserve",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20250319a.htm",
+      "affected_assets": [
+        "BTC",
+        "ETH"
+      ],
+      "market_regime": null,
+      "time_precision": "date_only",
+      "quality_flags": [
+        "exact_release_time_not_verified",
+        "conservative_next_UTC_day_entry",
+        "expectations_unavailable"
+      ]
+    },
+    {
+      "event_id": "FOMC-2025-05-07",
+      "event_type": "FOMC",
+      "title": "FOMC official release 2025-05-07",
+      "event_time": "2025-05-08T00:00:00+00:00",
+      "publication_time": "2025-05-07",
+      "first_available_time": "2025-05-08T00:00:00+00:00",
+      "expected_value": null,
+      "actual_value": null,
+      "surprise": null,
+      "source": "Federal Reserve",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20250507a.htm",
+      "affected_assets": [
+        "BTC",
+        "ETH"
+      ],
+      "market_regime": null,
+      "time_precision": "date_only",
+      "quality_flags": [
+        "exact_release_time_not_verified",
+        "conservative_next_UTC_day_entry",
+        "expectations_unavailable"
+      ]
+    },
+    {
+      "event_id": "FOMC-2025-06-18",
+      "event_type": "FOMC",
+      "title": "FOMC official release 2025-06-18",
+      "event_time": "2025-06-19T00:00:00+00:00",
+      "publication_time": "2025-06-18",
+      "first_available_time": "2025-06-19T00:00:00+00:00",
+      "expected_value": null,
+      "actual_value": null,
+      "surprise": null,
+      "source": "Federal Reserve",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20250618a.htm",
+      "affected_assets": [
+        "BTC",
+        "ETH"
+      ],
+      "market_regime": null,
+      "time_precision": "date_only",
+      "quality_flags": [
+        "exact_release_time_not_verified",
+        "conservative_next_UTC_day_entry",
+        "expectations_unavailable"
+      ]
+    },
+    {
+      "event_id": "FOMC-2025-07-30",
+      "event_type": "FOMC",
+      "title": "FOMC official release 2025-07-30",
+      "event_time": "2025-07-31T00:00:00+00:00",
+      "publication_time": "2025-07-30",
+      "first_available_time": "2025-07-31T00:00:00+00:00",
+      "expected_value": null,
+      "actual_value": null,
+      "surprise": null,
+      "source": "Federal Reserve",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20250730a.htm",
+      "affected_assets": [
+        "BTC",
+        "ETH"
+      ],
+      "market_regime": null,
+      "time_precision": "date_only",
+      "quality_flags": [
+        "exact_release_time_not_verified",
+        "conservative_next_UTC_day_entry",
+        "expectations_unavailable"
+      ]
+    },
+    {
+      "event_id": "FOMC-2025-08-22",
+      "event_type": "FOMC",
+      "title": "FOMC official release 2025-08-22",
+      "event_time": "2025-08-23T00:00:00+00:00",
+      "publication_time": "2025-08-22",
+      "first_available_time": "2025-08-23T00:00:00+00:00",
+      "expected_value": null,
+      "actual_value": null,
+      "surprise": null,
+      "source": "Federal Reserve",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20250822a.htm",
+      "affected_assets": [
+        "BTC",
+        "ETH"
+      ],
+      "market_regime": null,
+      "time_precision": "date_only",
+      "quality_flags": [
+        "exact_release_time_not_verified",
+        "conservative_next_UTC_day_entry",
+        "expectations_unavailable"
+      ]
+    },
+    {
+      "event_id": "FOMC-2025-09-17",
+      "event_type": "FOMC",
+      "title": "FOMC official release 2025-09-17",
+      "event_time": "2025-09-18T00:00:00+00:00",
+      "publication_time": "2025-09-17",
+      "first_available_time": "2025-09-18T00:00:00+00:00",
+      "expected_value": null,
+      "actual_value": null,
+      "surprise": null,
+      "source": "Federal Reserve",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20250917a.htm",
+      "affected_assets": [
+        "BTC",
+        "ETH"
+      ],
+      "market_regime": null,
+      "time_precision": "date_only",
+      "quality_flags": [
+        "exact_release_time_not_verified",
+        "conservative_next_UTC_day_entry",
+        "expectations_unavailable"
+      ]
+    },
+    {
+      "event_id": "FOMC-2025-10-29",
+      "event_type": "FOMC",
+      "title": "FOMC official release 2025-10-29",
+      "event_time": "2025-10-30T00:00:00+00:00",
+      "publication_time": "2025-10-29",
+      "first_available_time": "2025-10-30T00:00:00+00:00",
+      "expected_value": null,
+      "actual_value": null,
+      "surprise": null,
+      "source": "Federal Reserve",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20251029a.htm",
+      "affected_assets": [
+        "BTC",
+        "ETH"
+      ],
+      "market_regime": null,
+      "time_precision": "date_only",
+      "quality_flags": [
+        "exact_release_time_not_verified",
+        "conservative_next_UTC_day_entry",
+        "expectations_unavailable"
+      ]
+    },
+    {
+      "event_id": "FOMC-2025-12-10",
+      "event_type": "FOMC",
+      "title": "FOMC official release 2025-12-10",
+      "event_time": "2025-12-11T00:00:00+00:00",
+      "publication_time": "2025-12-10",
+      "first_available_time": "2025-12-11T00:00:00+00:00",
+      "expected_value": null,
+      "actual_value": null,
+      "surprise": null,
+      "source": "Federal Reserve",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20251210a.htm",
+      "affected_assets": [
+        "BTC",
+        "ETH"
+      ],
+      "market_regime": null,
+      "time_precision": "date_only",
+      "quality_flags": [
+        "exact_release_time_not_verified",
+        "conservative_next_UTC_day_entry",
+        "expectations_unavailable"
+      ]
+    },
+    {
+      "event_id": "FOMC-2026-01-28",
+      "event_type": "FOMC",
+      "title": "FOMC official release 2026-01-28",
+      "event_time": "2026-01-29T00:00:00+00:00",
+      "publication_time": "2026-01-28",
+      "first_available_time": "2026-01-29T00:00:00+00:00",
+      "expected_value": null,
+      "actual_value": null,
+      "surprise": null,
+      "source": "Federal Reserve",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260128a.htm",
+      "affected_assets": [
+        "BTC",
+        "ETH"
+      ],
+      "market_regime": null,
+      "time_precision": "date_only",
+      "quality_flags": [
+        "exact_release_time_not_verified",
+        "conservative_next_UTC_day_entry",
+        "expectations_unavailable"
+      ]
+    },
+    {
+      "event_id": "FOMC-2026-03-18",
+      "event_type": "FOMC",
+      "title": "FOMC official release 2026-03-18",
+      "event_time": "2026-03-19T00:00:00+00:00",
+      "publication_time": "2026-03-18",
+      "first_available_time": "2026-03-19T00:00:00+00:00",
+      "expected_value": null,
+      "actual_value": null,
+      "surprise": null,
+      "source": "Federal Reserve",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260318a.htm",
+      "affected_assets": [
+        "BTC",
+        "ETH"
+      ],
+      "market_regime": null,
+      "time_precision": "date_only",
+      "quality_flags": [
+        "exact_release_time_not_verified",
+        "conservative_next_UTC_day_entry",
+        "expectations_unavailable"
+      ]
+    },
+    {
+      "event_id": "FOMC-2026-04-29",
+      "event_type": "FOMC",
+      "title": "FOMC official release 2026-04-29",
+      "event_time": "2026-04-30T00:00:00+00:00",
+      "publication_time": "2026-04-29",
+      "first_available_time": "2026-04-30T00:00:00+00:00",
+      "expected_value": null,
+      "actual_value": null,
+      "surprise": null,
+      "source": "Federal Reserve",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260429a.htm",
+      "affected_assets": [
+        "BTC",
+        "ETH"
+      ],
+      "market_regime": null,
+      "time_precision": "date_only",
+      "quality_flags": [
+        "exact_release_time_not_verified",
+        "conservative_next_UTC_day_entry",
+        "expectations_unavailable"
+      ]
+    },
+    {
+      "event_id": "FOMC-2026-06-17",
+      "event_type": "FOMC",
+      "title": "FOMC official release 2026-06-17",
+      "event_time": "2026-06-18T00:00:00+00:00",
+      "publication_time": "2026-06-17",
+      "first_available_time": "2026-06-18T00:00:00+00:00",
+      "expected_value": null,
+      "actual_value": null,
+      "surprise": null,
+      "source": "Federal Reserve",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm",
+      "affected_assets": [
+        "BTC",
+        "ETH"
+      ],
+      "market_regime": null,
+      "time_precision": "date_only",
+      "quality_flags": [
+        "exact_release_time_not_verified",
+        "conservative_next_UTC_day_entry",
+        "expectations_unavailable"
+      ]
+    },
+    {
+      "event_id": "FOMC-2026-07-29",
+      "event_type": "FOMC",
+      "title": "FOMC official release 2026-07-29",
+      "event_time": "2026-07-30T00:00:00+00:00",
+      "publication_time": "2026-07-29",
+      "first_available_time": "2026-07-30T00:00:00+00:00",
+      "expected_value": null,
+      "actual_value": null,
+      "surprise": null,
+      "source": "Federal Reserve",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
+      "affected_assets": [
+        "BTC",
+        "ETH"
+      ],
+      "market_regime": null,
+      "time_precision": "date_only",
+      "quality_flags": [
+        "exact_release_time_not_verified",
+        "conservative_next_UTC_day_entry",
+        "expectations_unavailable"
+      ]
+    },
+    {
+      "event_id": "FOMC-2026-09-16",
+      "event_type": "FOMC",
+      "title": "FOMC official release 2026-09-16",
+      "event_time": "2026-09-17T00:00:00+00:00",
+      "publication_time": "2026-09-16",
+      "first_available_time": "2026-09-17T00:00:00+00:00",
+      "expected_value": null,
+      "actual_value": null,
+      "surprise": null,
+      "source": "Federal Reserve",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+      "affected_assets": [
+        "BTC",
+        "ETH"
+      ],
+      "market_regime": null,
+      "time_precision": "date_only",
+      "quality_flags": [
+        "exact_release_time_not_verified",
+        "conservative_next_UTC_day_entry",
+        "expectations_unavailable"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "source_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "retrieved_at": "2026-10-26T05:13:12.787588+00:00",
+      "cached": false,
+      "freshness_seconds": 0,
+      "quality_flags": []
+    }
+  ],
+  "errors": [],
+  "limitations": [
+    "Release dates obtained from official archive links; exact intraday publication times not verified. Event-time alignment is conservatively next UTC midnight, not announcement-minute response.",
+    "No historical consensus forecasts or release vintages supplied; surprise-conditioned macro inference is unavailable.",
+    "Archive coverage is bounded by the official page, not a guaranteed complete five-year event universe."
+  ]
+}

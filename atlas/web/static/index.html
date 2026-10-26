@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07090e">
+  <title>ATLAS · Research Floor</title>
+  <link rel="stylesheet" href="/app.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <button class="brand" id="homeBtn" type="button" aria-label="ATLAS home"><span class="brand-mark"><i></i><i></i><i></i><i></i></span><span>ATLAS<span class="brand-dot">.</span></span></button>
+      <nav class="main-nav" aria-label="Main navigation">
+        <button class="nav-link active" data-view="overview" type="button">总览</button>
+        <button class="nav-link" data-view="research" type="button">研究台</button>
+        <button class="nav-link" data-view="history" type="button">复盘档案</button>
+      </nav>
+      <div class="top-actions"><span class="local-pill"><span class="live-dot"></span><span id="localLabel">仅本机 · 只读</span></span><button class="lang-btn" id="languageBtn" type="button">EN</button></div>
+    </header>
+
+    <main>
+      <section class="hero" id="hero">
+        <div class="orb-wrap" aria-hidden="true"><div class="orb halo-one"></div><div class="orb halo-two"></div><div class="orb core"></div><div class="orb-grain"></div></div>
+        <div class="hero-content">
+          <div class="eyebrow"><span class="eyebrow-line"></span> A T L A S &nbsp;/&nbsp; RESEARCH FLOOR <span class="eyebrow-line"></span></div>
+          <h1 id="heroTitle">让每一份判断，<br><em>都有证据。</em></h1>
+          <p class="hero-sub" id="heroSub">12 位研究与风控角色，在同一张证据地图上协作。行情、分歧、风险与结论，全部可见。</p>
+          <div class="hero-metrics"><div><strong>12</strong><span id="metricAgents">研究角色</span></div><b></b><div><strong>03</strong><span id="metricMarkets">市场类型</span></div><b></b><div><strong>∞</strong><span id="metricHistory">本地复盘</span></div></div>
+        </div>
+      </section>
+
+      <section class="composer glass" id="composer" aria-labelledby="composerTitle">
+        <div class="composer-heading"><div><span class="section-kicker">01 / START HERE</span><h2 id="composerTitle">开启一次研究</h2></div><span class="source-note" id="sourceNote">交易对来自 OKX 公共目录 · 实时核验</span></div>
+        <div class="experience-pick"><span id="audienceLabel">你是哪类交易员？</span><div class="segmented"><button class="audience-btn active" type="button" data-audience="novice">新手 · 大白话</button><button class="audience-btn" type="button" data-audience="experienced">资深 · 专业版</button></div></div><div class="market-types" role="tablist" aria-label="Market type"><button class="type-btn active" type="button" data-type="SPOT">现货 <small>SPOT</small></button><button class="type-btn" type="button" data-type="SWAP">永续 <small>SWAP</small></button><button class="type-btn" type="button" data-type="FUTURES">交割 <small>FUTURES</small></button></div>
+        <div class="composer-row"><button class="market-picker" id="marketPicker" type="button"><span class="picker-icon">⌕</span><span><small id="pickerLabel">研究市场</small><strong id="selectedMarket">选择交易对</strong></span><span class="picker-chevron">⌄</span></button><div class="mode-wrap"><label id="modeLabel" for="modeSelect">研究模式</label><select id="modeSelect"><option value="full">完整委员会</option><option value="quick">快速技术扫描</option></select></div></div>
+        <div class="research-options"><div class="mode-wrap"><label id="horizonTypeLabel" for="horizonType">计划持仓</label><select id="horizonType"><option value="short">短期 · 1 小时到 1 天</option><option value="long">长期 · 1 天到 1 年</option></select></div><div class="mode-wrap"><label id="horizonLabel" for="horizonSelect">预计持有多久</label><select id="horizonSelect"><option value="1h">1 小时</option><option value="4h">4 小时</option><option value="12h">12 小时</option><option value="1d" selected>1 天</option></select></div><div class="mode-wrap"><label id="strategyLabel" for="strategySelect">研究策略</label><select id="strategySelect"><option value="standard">常规研究</option><option value="one_usdt_simulation">1U · 50/100 倍模拟</option></select></div></div><div class="prompt-row"><span class="prompt-symbol">↳</span><input id="researchNote" type="text" maxlength="400" placeholder="写下你关心的问题或研究备注（可选）" aria-label="Research note"><button class="run-btn" id="runBtn" type="button"><span id="runLabel">开始研究</span><span class="run-arrow">↗</span></button></div>
+        <p class="composer-foot" id="composerFoot">研究只读并保存到本机。选择交割合约时会显示尚未建模的换月与保证金风险。</p>
+      </section>
+
+      <section class="dashboard" id="dashboard">
+        <div class="section-head"><div><span class="section-kicker">02 / LIVE RESEARCH</span><h2 id="dashboardTitle">研究现场</h2><p id="dashboardSubtitle">选择交易对后，这里会显示每位角色的真实进度与结论。</p></div><div class="head-actions"><span id="runStatus" class="status-pill idle">等待任务</span><button id="refreshBtn" class="ghost-btn" type="button">刷新</button></div></div>
+        <div class="dashboard-grid">
+          <div class="glass constellation-panel"><div class="panel-top"><div><span class="mini-label">AGENT NETWORK</span><h3 id="networkTitle">决策网络</h3></div><span class="small-count" id="roleCount">0 / 12</span></div><div class="network-core"><div class="network-rings"><div id="orbitAgents" class="orbit-agents"></div><div class="network-center"><span>ATLAS</span><small id="networkPhase">STANDBY</small></div></div></div><div class="agent-grid" id="agentGrid"></div></div>
+          <div class="glass chart-panel"><div class="panel-top"><div><span class="mini-label">MARKET STRUCTURE</span><h3 id="chartTitle">行情结构</h3></div><div class="timeframe-switch" id="timeframeSwitch"><button type="button" data-tf="15m">15m</button><button type="button" data-tf="1H">1H</button><button class="active" type="button" data-tf="1D">1D</button><button type="button" data-tf="1W">1W</button><button type="button" data-tf="1M">1M</button></div></div><div class="chart-price"><strong id="chartPrice">—</strong><span id="chartInstrument">等待选择市场</span></div><div class="chart-canvas-wrap"><canvas id="marketChart" aria-label="K线行情图"></canvas><div id="chartEmpty" class="chart-empty">选择市场并开始研究后显示已确认 K 线</div></div><div class="chart-legend"><span><i class="legend-up"></i><span id="legendUp">上涨</span></span><span><i class="legend-down"></i><span id="legendDown">下跌</span></span><span><i class="legend-support"></i><span id="legendSupport">白线 · 重点观察</span></span><span><i class="legend-entry"></i><span id="legendEntry">红线 · 条件入场参考</span></span></div></div>
+        </div>
+        <div class="insight-grid"><section class="glass decision-panel"><div class="panel-top"><div><span class="mini-label">FINAL GATE</span><h3 id="decisionTitle">当前判断</h3></div><span class="risk-badge" id="decisionBadge">未研究</span></div><div id="codexPanel" class="codex-panel" hidden></div><p class="decision-lead" id="decisionLead">所有结论都附有行情时间、证据和阻断原因。</p><div class="level-grid"><div><small id="supportLabel">重点支撑</small><strong id="supportValue">—</strong></div><div><small id="resistanceLabel">重点阻力</small><strong id="resistanceValue">—</strong></div></div><p class="watch-method" id="watchMethod"></p><div id="entryIdea" class="entry-idea"></div><div id="oneUStudy" class="one-u-study" hidden></div><div class="reason-list" id="reasonList"></div><div class="report-actions"><button id="viewZhReport" class="ghost-btn" type="button">中文报告 ↗</button><button id="viewEnReport" class="ghost-btn" type="button">English report ↗</button><button id="reassessBtn" class="ghost-btn" type="button">重新判断 ↻</button></div><div class="decision-time" id="decisionTime">—</div></section><section class="glass timeline-panel"><div class="panel-top"><div><span class="mini-label">RESEARCH LOG</span><h3 id="timelineTitle">协作动态</h3></div><span class="small-count" id="eventCount">0 EVENTS</span></div><div class="timeline" id="eventTimeline"><div class="empty-copy">等待研究启动</div></div></section></div>
+        <section class="glass detail-panel" id="roleDetail"><div class="panel-top"><div><span class="mini-label">ROLE DOSSIER</span><h3 id="detailTitle">选择一位研究员</h3></div><span id="detailStatus" class="small-count">—</span></div><p id="detailSummary">点击上方角色，查看输入依赖、证据数量、结论与不确定性。</p><div id="detailFindings" class="detail-findings"></div></section>
+      </section>
+
+      <section class="history-section" id="history"><div class="section-head"><div><span class="section-kicker">03 / LOCAL MEMORY</span><h2 id="historyTitle">每一步都有记录</h2><p id="historySubtitle">研究报告、角色版本与操作日志保留在本机，方便回看判断如何形成。</p></div><button class="ghost-btn" id="historyRefresh" type="button">刷新档案</button></div><div class="history-grid"><div class="glass history-card"><div class="panel-top"><h3 id="historyListTitle">研究档案</h3><span id="historyCount" class="small-count">0 RECORDS</span></div><div id="historyList" class="history-list"></div></div><div class="glass journal-card"><div class="panel-top"><h3 id="journalTitle">本地操作记录</h3><span class="small-count">JSONL</span></div><div id="journalList" class="journal-list"></div></div></div></section>
+    </main>
+    <footer><span>ATLAS · INDEPENDENT RESEARCH</span><span id="footerCopy">只读研究工具 · 所有报告均有时间边界 · 不自动下单</span></footer>
+  </div>
+
+  <dialog id="marketDialog" class="market-dialog"><div class="dialog-head"><div><span class="section-kicker">OKX INSTRUMENTS</span><h2 id="dialogTitle">选择研究市场</h2></div><button id="closeDialog" class="dialog-close" type="button" aria-label="Close">×</button></div><div class="search-wrap"><span>⌕</span><input id="marketSearch" type="search" placeholder="搜索全部交易对，如 BTC、ETH、SOL…" autocomplete="off"></div><div class="dialog-meta"><span id="catalogCount">正在读取 OKX 市场目录…</span><span id="catalogTime"></span></div><div id="instrumentList" class="instrument-list"></div><p id="catalogDisclaimer" class="dialog-foot">目录来自 OKX 公共接口；可用性随市场和地区变化。灰色项目不可研究。</p></dialog>
+
+  <dialog id="profileDialog" class="profile-dialog"><form id="profileForm"><div class="dialog-head"><div><span class="section-kicker">FIRST LAUNCH</span><h2 id="profileTitle">先设置你的研究偏好</h2></div></div><label id="profileLevelLabel" for="profileLevel">交易经验</label><select id="profileLevel" required><option value="" disabled selected>请选择</option><option value="novice">新手交易员 · 大白话</option><option value="experienced">资深交易员 · 专业版</option></select><p id="profileIntro">只保存到你的电脑，用于风险预算。不会读取交易账户，也不会自动下单。</p><label id="profileLanguageLabel" for="profileLanguage">语言</label><select id="profileLanguage"><option value="zh">中文</option><option value="en">English</option></select><label id="profileCapitalLabel" for="profileCapital">规划本金（USDT）</label><input id="profileCapital" type="number" min="0.01" step="0.01" required placeholder="例如 300"><label id="profileMarketsLabel" for="profileMarkets">主要研究交易对（逗号分隔）</label><input id="profileMarkets" type="text" required placeholder="BTC-USDT, ETH-USDT"><label class="check-row"><input id="profileNoPositions" type="checkbox"><span id="profileNoPositionsLabel">我确认目前没有持仓或未成交挂单</span></label><button class="run-btn full" type="submit" id="saveProfileBtn">保存并进入研究台 ↗</button><p class="dialog-foot" id="profileFoot">未确认持仓时，风险控制会禁止生成可执行开仓数量。</p></form></dialog>
+  <dialog id="reportDialog" class="report-dialog"><div class="dialog-head"><div><span class="section-kicker">LOCAL REPORT</span><h2 id="reportDialogTitle">研究报告</h2></div><button id="closeReportDialog" class="dialog-close" type="button" aria-label="Close report">×</button></div><iframe id="reportFrame" title="ATLAS report" sandbox="" referrerpolicy="no-referrer"></iframe></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

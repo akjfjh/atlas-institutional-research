@@ -1,0 +1,88 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "evidence_id": {
+      "title": "Evidence Id",
+      "type": "string"
+    },
+    "source": {
+      "title": "Source",
+      "type": "string"
+    },
+    "source_url": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Source Url"
+    },
+    "instrument": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Instrument"
+    },
+    "timestamp": {
+      "title": "Timestamp",
+      "type": "string"
+    },
+    "retrieved_at": {
+      "title": "Retrieved At",
+      "type": "string"
+    },
+    "unit": {
+      "default": "mixed",
+      "title": "Unit",
+      "type": "string"
+    },
+    "status": {
+      "default": "observed",
+      "enum": [
+        "observed",
+        "derived",
+        "unavailable",
+        "host_attested"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "quality_flags": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Quality Flags",
+      "type": "array"
+    },
+    "data": {
+      "additionalProperties": true,
+      "title": "Data",
+      "type": "object"
+    },
+    "parent_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Parent Ids",
+      "type": "array"
+    }
+  },
+  "required": [
+    "evidence_id",
+    "source",
+    "timestamp",
+    "retrieved_at"
+  ],
+  "title": "Evidence",
+  "type": "object"
+}

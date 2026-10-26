@@ -1,0 +1,14 @@
+{
+  "events": [],
+  "sources": [],
+  "errors": [
+    {
+      "provider": "CPI",
+      "code": "http_403",
+      "message": "HTTP request failed at www.bls.gov"
+    }
+  ],
+  "limitations": [
+    "Historical event source unavailable"
+  ]
+}

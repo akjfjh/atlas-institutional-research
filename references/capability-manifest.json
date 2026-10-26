@@ -1,0 +1,63 @@
+{
+  "verified_at": "2026-10-26T05:11:59.836551+00:00",
+  "repository": "https://github.com/okx/agent-skills",
+  "ref": "github-main",
+  "skills": [
+    {
+      "name": "okx-cex-auth",
+      "version": "1.4.9",
+      "source": "https://raw.githubusercontent.com/okx/agent-skills/github-main/skills/okx-cex-auth/SKILL.md",
+      "permission": "READ_WRITE_MIXED"
+    },
+    {
+      "name": "okx-cex-bot",
+      "version": "1.4.9",
+      "source": "https://raw.githubusercontent.com/okx/agent-skills/github-main/skills/okx-cex-bot/SKILL.md",
+      "permission": "READ_WRITE_MIXED"
+    },
+    {
+      "name": "okx-cex-earn",
+      "version": "1.4.9",
+      "source": "https://raw.githubusercontent.com/okx/agent-skills/github-main/skills/okx-cex-earn/SKILL.md",
+      "permission": "READ_WRITE_MIXED"
+    },
+    {
+      "name": "okx-cex-market",
+      "version": "1.4.9",
+      "source": "https://raw.githubusercontent.com/okx/agent-skills/github-main/skills/okx-cex-market/SKILL.md",
+      "permission": "READ"
+    },
+    {
+      "name": "okx-cex-portfolio",
+      "version": "1.4.9",
+      "source": "https://raw.githubusercontent.com/okx/agent-skills/github-main/skills/okx-cex-portfolio/SKILL.md",
+      "permission": "READ_WRITE_MIXED"
+    },
+    {
+      "name": "okx-cex-skill-mp",
+      "version": "1.4.9",
+      "source": "https://raw.githubusercontent.com/okx/agent-skills/github-main/skills/okx-cex-skill-mp/SKILL.md",
+      "permission": "READ_WRITE_MIXED"
+    },
+    {
+      "name": "okx-cex-smartmoney",
+      "version": "1.4.9",
+      "source": "https://raw.githubusercontent.com/okx/agent-skills/github-main/skills/okx-cex-smartmoney/SKILL.md",
+      "permission": "READ"
+    },
+    {
+      "name": "okx-cex-trade",
+      "version": "1.4.9",
+      "source": "https://raw.githubusercontent.com/okx/agent-skills/github-main/skills/okx-cex-trade/SKILL.md",
+      "permission": "READ_WRITE_MIXED"
+    },
+    {
+      "name": "okx-sentiment-tracker",
+      "version": "1.4.9",
+      "source": "https://raw.githubusercontent.com/okx/agent-skills/github-main/skills/okx-sentiment-tracker/SKILL.md",
+      "permission": "READ"
+    }
+  ],
+  "cli_version_verified": "1.4.9",
+  "method": "GitHub API directory discovery + official raw SKILL.md metadata + installed CLI source"
+}

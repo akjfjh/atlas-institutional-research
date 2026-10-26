@@ -1,0 +1,12 @@
+{
+  "errors": [],
+  "limitations": [],
+  "complete": true,
+  "requested_start": "2021-10-25T23:14:46.707843+00:00",
+  "coverage_start": 1635120000000,
+  "coverage_end": 1792972800000,
+  "mode": "live",
+  "requests_used": 6,
+  "bars": 1827,
+  "elapsed_seconds": 4.1
+}

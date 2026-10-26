@@ -1,0 +1,116 @@
+{
+  "as_of_utc": "2026-10-26",
+  "status": "historical_observations_not_live_edge",
+  "backtest": {
+    "research_id": "atlas_7460e26e61734b6e",
+    "instrument": "ETH-USDT-SWAP",
+    "requested_start": "2021-10-25T23:24:04.571737+00:00",
+    "history_complete": true,
+    "baseline_oos": {
+      "trade_count": 41,
+      "net_return": 0.03636010637539355,
+      "win_rate": 0.4146341463414634,
+      "max_drawdown": 0.024832656363168115,
+      "profit_factor": 1.3502664297654952
+    },
+    "technical_proxy_oos": {
+      "trade_count": 49,
+      "net_return": 0.015227236905030361,
+      "win_rate": 0.3673469387755102,
+      "max_drawdown": 0.018772151051304697,
+      "profit_factor": 1.2238221181331503
+    },
+    "paired_mean_bar_return_difference_ci95": {
+      "low": -0.00012452733378070965,
+      "high": 5.658321002620255e-05,
+      "n": 731,
+      "samples": 500,
+      "block_size": 9,
+      "confidence": 0.95,
+      "method": "circular_moving_block_bootstrap",
+      "reliable": true
+    },
+    "credible_improvement": false,
+    "full_committee_replay": false,
+    "funding_history_included": false
+  },
+  "fomc": {
+    "research_id": "atlas_950943bc35724fb3",
+    "instrument": "BTC-USDT",
+    "usable_events": 41,
+    "rejected_events": 6,
+    "horizons": {
+      "1": {
+        "n": 41,
+        "mean_return": -0.0056984493210707945,
+        "ci95": {
+          "low": -0.014609803085122434,
+          "high": 0.002010670807113942,
+          "n": 41,
+          "samples": 500,
+          "block_size": 3,
+          "confidence": 0.95,
+          "method": "circular_moving_block_bootstrap",
+          "reliable": true
+        }
+      },
+      "3": {
+        "n": 41,
+        "mean_return": -0.009988070749997306,
+        "ci95": {
+          "low": -0.023023267212620706,
+          "high": 0.002606898071697438,
+          "n": 41,
+          "samples": 500,
+          "block_size": 3,
+          "confidence": 0.95,
+          "method": "circular_moving_block_bootstrap",
+          "reliable": true
+        }
+      },
+      "7": {
+        "n": 41,
+        "mean_return": -0.013694722777304533,
+        "ci95": {
+          "low": -0.04023600116965952,
+          "high": 0.011243527857758808,
+          "n": 41,
+          "samples": 500,
+          "block_size": 3,
+          "confidence": 0.95,
+          "method": "circular_moving_block_bootstrap",
+          "reliable": true
+        }
+      },
+      "14": {
+        "n": 41,
+        "mean_return": 0.0036313221726735766,
+        "ci95": {
+          "low": -0.029124583742465585,
+          "high": 0.03308959982409619,
+          "n": 41,
+          "samples": 500,
+          "block_size": 3,
+          "confidence": 0.95,
+          "method": "circular_moving_block_bootstrap",
+          "reliable": true
+        }
+      },
+      "30": {
+        "n": 41,
+        "mean_return": -0.0006333494772883713,
+        "ci95": {
+          "low": -0.041825323209962066,
+          "high": 0.05004244502585667,
+          "n": 41,
+          "samples": 500,
+          "block_size": 3,
+          "confidence": 0.95,
+          "method": "circular_moving_block_bootstrap",
+          "reliable": true
+        }
+      }
+    },
+    "causal_estimate": false
+  }
+}
