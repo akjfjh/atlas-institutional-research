@@ -1,6 +1,6 @@
 # ATLAS — Institutional Trading Intelligence
 
-<img src="docs/images/atlas-project-icon.png" alt="ATLAS 项目图标" width="88" height="88">
+<img src="https://raw.githubusercontent.com/akjfjh/atlas-institutional-research/main/docs/images/atlas-project-icon.png" alt="ATLAS 项目图标" width="88" height="88">
 
 [简体中文](README.md) · [English](README_EN.md)
 
